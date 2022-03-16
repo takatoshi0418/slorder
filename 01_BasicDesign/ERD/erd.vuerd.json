@@ -1,0 +1,1432 @@
+{
+  "canvas": {
+    "version": "2.2.11",
+    "width": 2000,
+    "height": 2000,
+    "scrollTop": -85,
+    "scrollLeft": -85,
+    "zoomLevel": 0.9,
+    "show": {
+      "tableComment": true,
+      "columnComment": true,
+      "columnDataType": true,
+      "columnDefault": true,
+      "columnAutoIncrement": false,
+      "columnPrimaryKey": true,
+      "columnUnique": false,
+      "columnNotNull": true,
+      "relationship": true
+    },
+    "database": "MySQL",
+    "databaseName": "slorder",
+    "canvasType": "ERD",
+    "language": "GraphQL",
+    "tableCase": "pascalCase",
+    "columnCase": "camelCase",
+    "highlightTheme": "VS2015",
+    "bracketType": "none",
+    "setting": {
+      "relationshipDataTypeSync": true,
+      "relationshipOptimization": false,
+      "columnOrder": [
+        "columnName",
+        "columnDataType",
+        "columnNotNull",
+        "columnUnique",
+        "columnAutoIncrement",
+        "columnDefault",
+        "columnComment"
+      ]
+    },
+    "pluginSerializationMap": {}
+  },
+  "table": {
+    "tables": [
+      {
+        "name": "user",
+        "comment": "ユーザー",
+        "columns": [
+          {
+            "name": "user_account",
+            "comment": "アカウント名",
+            "dataType": "VARCHAR(16)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 86.8935546875,
+              "widthComment": 80,
+              "widthDataType": 91.8447265625,
+              "widthDefault": 60
+            },
+            "id": "0b644d24-acba-4479-9297-bc94eca0f1bc"
+          },
+          {
+            "name": "password",
+            "comment": "パスワード",
+            "dataType": "VARCHAR(128)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 62.2265625,
+              "widthComment": 67,
+              "widthDataType": 99.9189453125,
+              "widthDefault": 60
+            },
+            "id": "ec76bbcc-10f3-492c-a4f2-25aae243f464"
+          },
+          {
+            "name": "user_name",
+            "comment": "ユーザー名",
+            "dataType": "VARCHAR(32)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 73.01123046875,
+              "widthComment": 67,
+              "widthDataType": 91.8447265625,
+              "widthDefault": 60
+            },
+            "id": "86b1c1ea-dd4c-4007-bd91-61c990e81f7a"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 1157.6671,
+          "top": 206.4444,
+          "zIndex": 788,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "3dc9f625-67f5-4ae9-9c7e-a653c25a4924"
+      },
+      {
+        "name": "project",
+        "comment": "受注",
+        "columns": [
+          {
+            "name": "project_id",
+            "comment": "プロジェクトID",
+            "dataType": "VARCHAR(16)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 65.57177734375,
+              "widthComment": 94.97412109375,
+              "widthDataType": 91.8447265625,
+              "widthDefault": 60
+            },
+            "id": "f7c0007c-3ecf-44f0-8eaa-2514ba811863"
+          },
+          {
+            "name": "project_name",
+            "comment": "プロジェクト名",
+            "dataType": "VARCHAR(32)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 89.9150390625,
+              "widthComment": 93,
+              "widthDataType": 91.8447265625,
+              "widthDefault": 60
+            },
+            "id": "c6214630-9930-41af-b7dd-d1aad78ad6bf"
+          },
+          {
+            "name": "customer_id",
+            "comment": "顧客番号",
+            "dataType": "VARCHAR(16)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 80.37451171875,
+              "widthComment": 60,
+              "widthDataType": 91.8447265625,
+              "widthDefault": 60
+            },
+            "id": "aecb131f-600c-4b0c-beb5-c03394981876"
+          },
+          {
+            "name": "project_status",
+            "comment": "ステータス",
+            "dataType": "INTEGER",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 92.73974609375,
+              "widthComment": 67,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "b07fe80d-5857-4ba1-9ad3-14c565d586e6"
+          },
+          {
+            "name": "create_date",
+            "comment": "作成日",
+            "dataType": "DATETIME",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 77.384765625,
+              "widthComment": 60,
+              "widthDataType": 68.21875,
+              "widthDefault": 60
+            },
+            "id": "d664f146-63d0-4b54-825d-97541cb39cf8"
+          },
+          {
+            "name": "order_date",
+            "comment": "受注日",
+            "dataType": "DATETIME",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 71.82421875,
+              "widthComment": 60,
+              "widthDataType": 68.21875,
+              "widthDefault": 60
+            },
+            "id": "bc39c4ae-302d-490e-bdfd-8fa89c7cf3f2"
+          },
+          {
+            "name": "limit_date",
+            "comment": "納期日",
+            "dataType": "DATETIME",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 65.25439453125,
+              "widthComment": 60,
+              "widthDataType": 68.21875,
+              "widthDefault": 60
+            },
+            "id": "ae39fd2b-0142-46d7-ade5-162c45e5dad9"
+          },
+          {
+            "name": "delivery_date",
+            "comment": "納品日",
+            "dataType": "DATETIME",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 87.63623046875,
+              "widthComment": 60,
+              "widthDataType": 68.21875,
+              "widthDefault": 60
+            },
+            "id": "d2805ece-33ea-4fa7-ab88-18e8040ef373"
+          },
+          {
+            "name": "acceptance_limit_date",
+            "comment": "検収予定日",
+            "dataType": "DATETIME",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 144.05419921875,
+              "widthComment": 67,
+              "widthDataType": 68.21875,
+              "widthDefault": 60
+            },
+            "id": "1894e438-c738-40ea-b455-fb6aadd998cc"
+          },
+          {
+            "name": "acceptanced_date",
+            "comment": "検収確認日",
+            "dataType": "DATETIME",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 116.587890625,
+              "widthComment": 67,
+              "widthDataType": 68.21875,
+              "widthDefault": 60
+            },
+            "id": "b88d4669-0c5f-4b36-a749-5ede310b363a"
+          },
+          {
+            "name": "payment_limit_date",
+            "comment": "入金予定日",
+            "dataType": "DATETIME",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 128.98486328125,
+              "widthComment": 67,
+              "widthDataType": 68.21875,
+              "widthDefault": 60
+            },
+            "id": "8e7c7582-5739-4b8d-95ae-fa2e0caed036"
+          },
+          {
+            "name": "paymented_date",
+            "comment": "入金確認日",
+            "dataType": "DATETIME",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 109.021484375,
+              "widthComment": 67,
+              "widthDataType": 68.21875,
+              "widthDefault": 60
+            },
+            "id": "7a06da2f-1155-40d2-af4b-2c322d7a03e1"
+          },
+          {
+            "name": "lost_order_date",
+            "comment": "失注日",
+            "dataType": "DATETIME",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 102.318359375,
+              "widthComment": 60,
+              "widthDataType": 68.21875,
+              "widthDefault": 60
+            },
+            "id": "6de350ef-edcd-4d63-b674-2f9371d1acaa"
+          },
+          {
+            "name": "order_amount",
+            "comment": "受注金額",
+            "dataType": "BIGINT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 92.67626953125,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "72cdfbf7-5927-4694-b537-ed2b936adb22"
+          },
+          {
+            "name": "operating_time",
+            "comment": "稼働工数",
+            "dataType": "INTEGER",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 98.28759765625,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "7bfe69e2-b5c8-4377-9aca-dcf31c3502dc"
+          },
+          {
+            "name": "operating_cost",
+            "comment": "稼働原価",
+            "dataType": "BIGINT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 95.79296875,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "94850d86-a3e1-4761-89a1-9890e6959606"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 70,
+          "top": 202,
+          "zIndex": 922,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "6f3ec1cc-6db4-4368-9402-e8ee80b51568"
+      },
+      {
+        "name": "project_member",
+        "comment": "受注メンバー",
+        "columns": [
+          {
+            "name": "project_id",
+            "comment": "プロジェクトID",
+            "dataType": "VARCHAR(16)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": true,
+              "widthName": 65.57177734375,
+              "widthComment": 94.97412109375,
+              "widthDataType": 91.8447265625,
+              "widthDefault": 60
+            },
+            "id": "798a9d3f-ce40-4a91-8d48-b40be40b28ac"
+          },
+          {
+            "name": "member_id",
+            "comment": "メンバーID",
+            "dataType": "VARCHAR(16)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": true,
+              "widthName": 74.515625,
+              "widthComment": 68.97412109375,
+              "widthDataType": 91.8447265625,
+              "widthDefault": 60
+            },
+            "id": "94681e59-5382-4d56-b645-d7fadc2b1cb2"
+          },
+          {
+            "name": "assign_date",
+            "comment": "割当日",
+            "dataType": "DATETIME",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 77.67041015625,
+              "widthComment": 60,
+              "widthDataType": 68.21875,
+              "widthDefault": 60
+            },
+            "id": "887b1e55-20c8-4d31-895d-4f15cf5e3c42"
+          },
+          {
+            "name": "reject_date",
+            "comment": "割当解除日",
+            "dataType": "DATETIME",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 74.11572265625,
+              "widthComment": 67,
+              "widthDataType": 68.21875,
+              "widthDefault": 60
+            },
+            "id": "68421ec1-6417-405e-aff9-a4403395b06f"
+          },
+          {
+            "name": "unit_cost",
+            "comment": "単価",
+            "dataType": "INTEGER",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60.0810546875,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "adb11ce8-8888-4676-9ca3-e2ba78b7ea69"
+          },
+          {
+            "name": "oprating_time",
+            "comment": "稼働時間",
+            "dataType": "INTEGER",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 90.78466796875,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "ab9486b7-0c8e-46f2-a09d-38fd191d640e"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 668.2216,
+          "top": 207.1115,
+          "zIndex": 920,
+          "widthName": 107.59326171875,
+          "widthComment": 80
+        },
+        "visible": true,
+        "id": "3eb3f72f-73d2-411c-9e00-d730053f32d0"
+      },
+      {
+        "name": "customer",
+        "comment": "顧客",
+        "columns": [
+          {
+            "name": "customer_id",
+            "comment": "顧客番号",
+            "dataType": "VARCHAR(16)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 80.37451171875,
+              "widthComment": 60,
+              "widthDataType": 91.8447265625,
+              "widthDefault": 60
+            },
+            "id": "27b72cc6-b285-4efb-83c5-c176b5caa3c7"
+          },
+          {
+            "name": "customer_name",
+            "comment": "顧客名",
+            "dataType": "VARCHAR(64)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 104.7177734375,
+              "widthComment": 60,
+              "widthDataType": 91.8447265625,
+              "widthDefault": 60
+            },
+            "id": "60ff3122-8ff7-4112-a1c3-cd558ef688ae"
+          },
+          {
+            "name": "post_number",
+            "comment": "郵便番号",
+            "dataType": "VARCHAR(8)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 86.43017578125,
+              "widthComment": 60,
+              "widthDataType": 83.7705078125,
+              "widthDefault": 60
+            },
+            "id": "56a78040-ec8c-4f5c-baa9-6c73dd9acbf8"
+          },
+          {
+            "name": "prefectures",
+            "comment": "都道府県",
+            "dataType": "VARCHAR(16)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 73.54443359375,
+              "widthComment": 60,
+              "widthDataType": 91.8447265625,
+              "widthDefault": 60
+            },
+            "id": "714a2e15-ce95-4639-a6cf-3dc3a8644aa8"
+          },
+          {
+            "name": "municipalities",
+            "comment": "市区町村",
+            "dataType": "VARCHAR(32)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 87.99169921875,
+              "widthComment": 60,
+              "widthDataType": 91.8447265625,
+              "widthDefault": 60
+            },
+            "id": "6d96a37a-7702-4047-94bd-97ee79291c22"
+          },
+          {
+            "name": "address",
+            "comment": "番地",
+            "dataType": "VARCHAR(32)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 91.8447265625,
+              "widthDefault": 60
+            },
+            "id": "dad2d0a1-8884-47ad-a550-d4d20c4b31d2"
+          },
+          {
+            "name": "building_name",
+            "comment": "建物名",
+            "dataType": "VARCHAR(32)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 95.310546875,
+              "widthComment": 60,
+              "widthDataType": 91.8447265625,
+              "widthDefault": 60
+            },
+            "id": "0d9af11d-1ddf-4eda-bbc1-b620463696b8"
+          },
+          {
+            "name": "phone_number",
+            "comment": "電話番号",
+            "dataType": "VARCHAR(16)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 98.60498046875,
+              "widthComment": 60,
+              "widthDataType": 91.8447265625,
+              "widthDefault": 60
+            },
+            "id": "5e1c821d-9e42-49f9-acb3-ae710092ec0c"
+          },
+          {
+            "name": "mail_address",
+            "comment": "メールアドレス",
+            "dataType": "VARCHAR(32)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 85.87158203125,
+              "widthComment": 93,
+              "widthDataType": 91.8447265625,
+              "widthDefault": 60
+            },
+            "id": "fa8c5443-d6dd-4698-b692-bac26c51fc0b"
+          },
+          {
+            "name": "trade_opne_date",
+            "comment": "取引開始日",
+            "dataType": "DATETIME",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 110.25927734375,
+              "widthComment": 67,
+              "widthDataType": 68.21875,
+              "widthDefault": 60
+            },
+            "id": "9192cb92-f01b-419b-bc59-726a0a738d85"
+          },
+          {
+            "name": "trade_close_date",
+            "comment": "取引終了日",
+            "dataType": "DATETIME",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 110.67822265625,
+              "widthComment": 67,
+              "widthDataType": 68.21875,
+              "widthDefault": 60
+            },
+            "id": "486bcc27-0e39-498c-a071-5bd2a62f9dd9"
+          },
+          {
+            "name": "trade_close_reason",
+            "comment": "取引終了理由",
+            "dataType": "VARCHAR(1024)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 125.44287109375,
+              "widthComment": 80,
+              "widthDataType": 107.9931640625,
+              "widthDefault": 60
+            },
+            "id": "ff83884e-942d-4d80-bbb3-c2f7080d2abb"
+          },
+          {
+            "name": "edited_date",
+            "comment": "更新日",
+            "dataType": "DATETIME",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 77.00390625,
+              "widthComment": 60,
+              "widthDataType": 68.21875,
+              "widthDefault": 60
+            },
+            "id": "ce663290-b783-4691-886f-e3a64f76045e"
+          },
+          {
+            "name": "note",
+            "comment": "備考",
+            "dataType": "VARCHAR(1024)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 107.9931640625,
+              "widthDefault": 60
+            },
+            "id": "d9a26b32-266f-4da8-a64b-77a1ce507067"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 75.3331,
+          "top": 757.2221,
+          "zIndex": 838,
+          "widthName": 61.09033203125,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "f72e0d01-1492-4964-8af4-dccb5ada7c03"
+      },
+      {
+        "name": "member",
+        "comment": "メンバー",
+        "columns": [
+          {
+            "name": "member_id",
+            "comment": "メンバーID",
+            "dataType": "VARCHAR(16)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 74.515625,
+              "widthComment": 68.97412109375,
+              "widthDataType": 91.8447265625,
+              "widthDefault": 60
+            },
+            "id": "ec87673a-1281-47c1-8b19-549486a7464b"
+          },
+          {
+            "name": "latst_name",
+            "comment": "氏",
+            "dataType": "VARCHAR(16)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 72.79541015625,
+              "widthComment": 60,
+              "widthDataType": 91.8447265625,
+              "widthDefault": 60
+            },
+            "id": "4c08a965-201b-4106-975d-982360ed512d"
+          },
+          {
+            "name": "first_name",
+            "comment": "名",
+            "dataType": "VARCHAR(16)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 70.07861328125,
+              "widthComment": 60,
+              "widthDataType": 91.8447265625,
+              "widthDefault": 60
+            },
+            "id": "2813dd35-7f9c-4250-9ec8-5eb2e6777b32"
+          },
+          {
+            "name": "post_number",
+            "comment": "郵便番号",
+            "dataType": "VARCHAR(8)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 86.43017578125,
+              "widthComment": 60,
+              "widthDataType": 83.7705078125,
+              "widthDefault": 60
+            },
+            "id": "eddb5ed9-025a-4610-861c-1666be083230"
+          },
+          {
+            "name": "prefectures",
+            "comment": "都道府県",
+            "dataType": "VARCHAR(16)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 73.54443359375,
+              "widthComment": 60,
+              "widthDataType": 91.8447265625,
+              "widthDefault": 60
+            },
+            "id": "056d36f0-8313-4246-a7cd-06197d2a23f3"
+          },
+          {
+            "name": "municipalities",
+            "comment": "市区町村",
+            "dataType": "VARCHAR(32)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 87.99169921875,
+              "widthComment": 60,
+              "widthDataType": 91.8447265625,
+              "widthDefault": 60
+            },
+            "id": "d5dba6e4-b4d7-4aa9-9523-0e98971ae03c"
+          },
+          {
+            "name": "address",
+            "comment": "番地",
+            "dataType": "VARCHAR(32)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 91.8447265625,
+              "widthDefault": 60
+            },
+            "id": "a1f80b1f-e37d-4381-a41e-5b2231104102"
+          },
+          {
+            "name": "building_name",
+            "comment": "建物名",
+            "dataType": "VARCHAR(32)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 95.310546875,
+              "widthComment": 60,
+              "widthDataType": 91.8447265625,
+              "widthDefault": 60
+            },
+            "id": "59c2d119-3e09-43dd-acd2-790d1670691b"
+          },
+          {
+            "name": "phone_number",
+            "comment": "電話番号",
+            "dataType": "VARCHAR(16)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 98.60498046875,
+              "widthComment": 60,
+              "widthDataType": 91.8447265625,
+              "widthDefault": 60
+            },
+            "id": "dd42522b-abec-44e7-b36f-6b52cc43ba16"
+          },
+          {
+            "name": "mail_address",
+            "comment": "メールアドレス",
+            "dataType": "VARCHAR(32)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 85.87158203125,
+              "widthComment": 93,
+              "widthDataType": 91.8447265625,
+              "widthDefault": 60
+            },
+            "id": "b95ba5a5-b5be-48c8-b4b0-6e28426cd753"
+          },
+          {
+            "name": "join_date",
+            "comment": "入社日",
+            "dataType": "DATETIME",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 61.28076171875,
+              "widthComment": 60,
+              "widthDataType": 68.21875,
+              "widthDefault": 60
+            },
+            "id": "6559c9f5-5fea-462d-8d0c-c22fbf79bc4f"
+          },
+          {
+            "name": "retired_date",
+            "comment": "退社日",
+            "dataType": "DATETIME",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 79.8349609375,
+              "widthComment": 60,
+              "widthDataType": 68.21875,
+              "widthDefault": 60
+            },
+            "id": "2b5f36f5-842d-4968-ad21-36eee60aba48"
+          },
+          {
+            "name": "retired_reason",
+            "comment": "退社理由",
+            "dataType": "VARCHAR(1024)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 94.599609375,
+              "widthComment": 60,
+              "widthDataType": 107.9931640625,
+              "widthDefault": 60
+            },
+            "id": "bb14446b-9e99-4bf7-bd32-dc276662cc82"
+          },
+          {
+            "name": "unit_cost",
+            "comment": "稼働単価",
+            "dataType": "INTEGER",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60.0810546875,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "038d5ba7-17e6-45dc-8640-34d4da177882"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 656.112,
+          "top": 574.2226,
+          "zIndex": 936,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "d6a7ae3d-d64f-4867-98cc-c620ef501b6c"
+      }
+    ],
+    "indexes": []
+  },
+  "memo": {
+    "memos": []
+  },
+  "relationship": {
+    "relationships": [
+      {
+        "identification": true,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "6f3ec1cc-6db4-4368-9402-e8ee80b51568",
+          "columnIds": [
+            "f7c0007c-3ecf-44f0-8eaa-2514ba811863"
+          ],
+          "x": 567.873046875,
+          "y": 400.5,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "3eb3f72f-73d2-411c-9e00-d730053f32d0",
+          "columnIds": [
+            "798a9d3f-ce40-4a91-8d48-b40be40b28ac"
+          ],
+          "x": 668.2216,
+          "y": 303.1115,
+          "direction": "left"
+        },
+        "constraintName": "fk_project_to_project_member",
+        "visible": true,
+        "id": "c900a70a-0bd4-411b-9ea3-82f31296a143"
+      },
+      {
+        "identification": false,
+        "relationshipType": "ZeroN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "f72e0d01-1492-4964-8af4-dccb5ada7c03",
+          "columnIds": [
+            "27b72cc6-b285-4efb-83c5-c176b5caa3c7"
+          ],
+          "x": 322.051117578125,
+          "y": 757.2221,
+          "direction": "top"
+        },
+        "end": {
+          "tableId": "6f3ec1cc-6db4-4368-9402-e8ee80b51568",
+          "columnIds": [
+            "aecb131f-600c-4b0c-beb5-c03394981876"
+          ],
+          "x": 318.9365234375,
+          "y": 599,
+          "direction": "bottom"
+        },
+        "constraintName": "fk_customer_to_project",
+        "visible": true,
+        "id": "fac36d43-2cae-4c59-8b2f-4a17de939486"
+      },
+      {
+        "identification": true,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "d6a7ae3d-d64f-4867-98cc-c620ef501b6c",
+          "columnIds": [
+            "ec87673a-1281-47c1-8b19-549486a7464b"
+          ],
+          "x": 889.411072265625,
+          "y": 574.2226,
+          "direction": "top"
+        },
+        "end": {
+          "tableId": "3eb3f72f-73d2-411c-9e00-d730053f32d0",
+          "columnIds": [
+            "94681e59-5382-4d56-b645-d7fadc2b1cb2"
+          ],
+          "x": 890.5233578125,
+          "y": 399.1115,
+          "direction": "bottom"
+        },
+        "constraintName": "fk_member_to_project_member",
+        "visible": true,
+        "id": "b8cb1f08-27bc-4119-a200-bd17b4464ba3"
+      }
+    ]
+  }
+}
