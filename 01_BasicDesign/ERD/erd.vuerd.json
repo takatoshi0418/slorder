@@ -3,7 +3,7 @@
     "version": "2.2.11",
     "width": 2000,
     "height": 2000,
-    "scrollTop": -47,
+    "scrollTop": -48,
     "scrollLeft": -4,
     "zoomLevel": 1,
     "show": {
@@ -373,7 +373,7 @@
           "active": false,
           "left": 17.5557,
           "top": 381.9999,
-          "zIndex": 156,
+          "zIndex": 8,
           "widthName": 60,
           "widthComment": 60
         },
@@ -774,13 +774,59 @@
               "widthDefault": 60
             },
             "id": "94850d86-a3e1-4761-89a1-9890e6959606"
+          },
+          {
+            "name": "others_cost",
+            "comment": "その他原価",
+            "dataType": "BIGINT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 75.810546875,
+              "widthComment": 67,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "29808505-eb29-42c4-91df-a931a96c5746"
+          },
+          {
+            "name": "turnover",
+            "comment": "収益",
+            "dataType": "BIGINT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "a6e0f0fa-e247-4fbc-afc9-0d8a33405f60"
           }
         ],
         "ui": {
-          "active": false,
+          "active": true,
           "left": 598.3332,
-          "top": 95.3332,
-          "zIndex": 105,
+          "top": 94.3332,
+          "zIndex": 32,
           "widthName": 60,
           "widthComment": 60
         },
@@ -934,7 +980,7 @@
           "active": false,
           "left": 1210.7773,
           "top": 209.0005,
-          "zIndex": 147,
+          "zIndex": 4,
           "widthName": 107.59326171875,
           "widthComment": 80
         },
@@ -1295,7 +1341,7 @@
           "active": false,
           "left": 598.6664,
           "top": 676.2223,
-          "zIndex": 146,
+          "zIndex": 3,
           "widthName": 61.09033203125,
           "widthComment": 60
         },
@@ -1633,7 +1679,7 @@
           "active": false,
           "left": 1201.7786,
           "top": 683.2228,
-          "zIndex": 144,
+          "zIndex": 2,
           "widthName": 60,
           "widthComment": 60
         },
@@ -1658,7 +1704,7 @@
             "f7c0007c-3ecf-44f0-8eaa-2514ba811863"
           ],
           "x": 1096.206246875,
-          "y": 304.08320000000003,
+          "y": 323.58320000000003,
           "direction": "right"
         },
         "end": {
@@ -1719,7 +1765,7 @@
             "983b9c34-6528-478d-809f-a0b13f28871d"
           ],
           "x": 598.3332,
-          "y": 304.08320000000003,
+          "y": 323.58320000000003,
           "direction": "left"
         },
         "constraintName": "fk_user_to_project",
@@ -1745,7 +1791,7 @@
             "aecb131f-600c-4b0c-beb5-c03394981876"
           ],
           "x": 847.2697234375,
-          "y": 512.8332,
+          "y": 552.8332,
           "direction": "bottom"
         },
         "constraintName": "fk_customer_to_project",
