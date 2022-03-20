@@ -431,29 +431,6 @@
             "id": "29808505-eb29-42c4-91df-a931a96c5746"
           },
           {
-            "name": "turnover",
-            "comment": "収益",
-            "dataType": "BIGINT",
-            "default": "",
-            "option": {
-              "autoIncrement": false,
-              "primaryKey": false,
-              "unique": false,
-              "notNull": false
-            },
-            "ui": {
-              "active": false,
-              "pk": false,
-              "fk": false,
-              "pfk": false,
-              "widthName": 60,
-              "widthComment": 60,
-              "widthDataType": 60,
-              "widthDefault": 60
-            },
-            "id": "a6e0f0fa-e247-4fbc-afc9-0d8a33405f60"
-          },
-          {
             "name": "create_user",
             "comment": "作成者",
             "dataType": "VARCHAR(16)",
@@ -508,7 +485,7 @@
               "autoIncrement": false,
               "primaryKey": false,
               "unique": false,
-              "notNull": true
+              "notNull": false
             },
             "ui": {
               "active": false,
@@ -570,14 +547,14 @@
           },
           {
             "name": "delivery_user",
-            "comment": "納品者",
+            "comment": "納品責任者",
             "dataType": "VARCHAR(16)",
             "default": "",
             "option": {
               "autoIncrement": false,
               "primaryKey": false,
               "unique": false,
-              "notNull": true
+              "notNull": false
             },
             "ui": {
               "active": false,
@@ -585,7 +562,7 @@
               "fk": true,
               "pfk": false,
               "widthName": 87.14111328125,
-              "widthComment": 60,
+              "widthComment": 67,
               "widthDataType": 91.8447265625,
               "widthDefault": 60
             },
@@ -646,7 +623,7 @@
               "autoIncrement": false,
               "primaryKey": false,
               "unique": false,
-              "notNull": true
+              "notNull": false
             },
             "ui": {
               "active": false,
@@ -715,7 +692,7 @@
               "autoIncrement": false,
               "primaryKey": false,
               "unique": false,
-              "notNull": true
+              "notNull": false
             },
             "ui": {
               "active": false,
@@ -780,7 +757,7 @@
           "active": false,
           "left": 598.3332,
           "top": 96.3332,
-          "zIndex": 7,
+          "zIndex": 15,
           "widthName": 60,
           "widthComment": 60
         },
@@ -909,9 +886,9 @@
         ],
         "ui": {
           "active": false,
-          "left": 1223.7773,
-          "top": 185.0005,
-          "zIndex": 27,
+          "left": 1228.7773,
+          "top": 16.0005,
+          "zIndex": 24,
           "widthName": 107.59326171875,
           "widthComment": 80
         },
@@ -1516,9 +1493,9 @@
         ],
         "ui": {
           "active": false,
-          "left": 1239.4019,
-          "top": 381.2228,
-          "zIndex": 29,
+          "left": 1384.4019,
+          "top": 378.2228,
+          "zIndex": 23,
           "widthName": 60,
           "widthComment": 60
         },
@@ -1649,7 +1626,7 @@
           "active": false,
           "left": 608.7149,
           "top": 1670.4282,
-          "zIndex": 16,
+          "zIndex": 11,
           "widthName": 60,
           "widthComment": 60
         },
@@ -1888,7 +1865,7 @@
           "active": false,
           "left": 605.571,
           "top": 1439.1422,
-          "zIndex": 15,
+          "zIndex": 10,
           "widthName": 74.38232421875,
           "widthComment": 106
         },
@@ -2279,7 +2256,7 @@
           {
             "name": "work_time",
             "comment": "稼働時間",
-            "dataType": "INTEGER",
+            "dataType": "TIME",
             "default": "",
             "option": {
               "autoIncrement": false,
@@ -2302,9 +2279,9 @@
         ],
         "ui": {
           "active": false,
-          "left": 1221,
-          "top": 19,
-          "zIndex": 28,
+          "left": 1402,
+          "top": 206,
+          "zIndex": 22,
           "widthName": 60,
           "widthComment": 60
         },
@@ -2589,7 +2566,7 @@
           "active": false,
           "left": 1227,
           "top": 1643,
-          "zIndex": 13,
+          "zIndex": 8,
           "widthName": 60,
           "widthComment": 60
         },
@@ -2651,7 +2628,7 @@
           "active": false,
           "left": 1207.8843,
           "top": 1203,
-          "zIndex": 17,
+          "zIndex": 12,
           "widthName": 70.56103515625,
           "widthComment": 60
         },
@@ -2713,7 +2690,7 @@
           "active": false,
           "left": 1220,
           "top": 1415,
-          "zIndex": 14,
+          "zIndex": 9,
           "widthName": 98.32568359375,
           "widthComment": 67
         },
@@ -2727,7 +2704,7 @@
           {
             "name": "cost_id",
             "comment": "その他原価ID",
-            "dataType": "VARCHAR(16)",
+            "dataType": "BIGINT",
             "default": "",
             "option": {
               "autoIncrement": false,
@@ -2742,7 +2719,7 @@
               "pfk": false,
               "widthName": 60,
               "widthComment": 81.97412109375,
-              "widthDataType": 91.8447265625,
+              "widthDataType": 60,
               "widthDefault": 60
             },
             "id": "d6ce6e2e-a7d5-4f25-9810-720c8b40ab06"
@@ -2817,6 +2794,29 @@
             "id": "d85441c9-3d36-4160-93a9-29b42e19cb07"
           },
           {
+            "name": "buy_date",
+            "comment": "購入日",
+            "dataType": "DATETIME",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 61.25537109375,
+              "widthComment": 60,
+              "widthDataType": 68.21875,
+              "widthDefault": 60
+            },
+            "id": "30e3a71c-850a-474d-a366-d1c2718bec91"
+          },
+          {
             "name": "cost",
             "comment": "原価",
             "dataType": "BIGINT",
@@ -2842,9 +2842,9 @@
         ],
         "ui": {
           "active": false,
-          "left": 1332,
-          "top": 761,
-          "zIndex": 20,
+          "left": 1353,
+          "top": 794,
+          "zIndex": 18,
           "widthName": 60,
           "widthComment": 67
         },
@@ -2906,7 +2906,7 @@
           "active": false,
           "left": 1057,
           "top": 1032,
-          "zIndex": 12,
+          "zIndex": 7,
           "widthName": 62.19482421875,
           "widthComment": 93
         },
@@ -2931,7 +2931,7 @@
             "f7c0007c-3ecf-44f0-8eaa-2514ba811863"
           ],
           "x": 1113.16083671875,
-          "y": 236.5832,
+          "y": 231.4582,
           "direction": "right"
         },
         "end": {
@@ -2939,8 +2939,8 @@
           "columnIds": [
             "798a9d3f-ce40-4a91-8d48-b40be40b28ac"
           ],
-          "x": 1223.7773,
-          "y": 270.7505,
+          "x": 1228.7773,
+          "y": 101.7505,
           "direction": "left"
         },
         "constraintName": "fk_project_to_project_member",
@@ -2966,7 +2966,7 @@
             "aecb131f-600c-4b0c-beb5-c03394981876"
           ],
           "x": 635.1066026227678,
-          "y": 657.3332,
+          "y": 636.8332,
           "direction": "bottom"
         },
         "constraintName": "fk_customer_to_project",
@@ -3087,7 +3087,7 @@
             "f7c0007c-3ecf-44f0-8eaa-2514ba811863"
           ],
           "x": 1113.16083671875,
-          "y": 517.0832,
+          "y": 501.70820000000003,
           "direction": "right"
         },
         "end": {
@@ -3095,8 +3095,8 @@
           "columnIds": [
             "f791742e-e6a3-4f6d-b2c4-8530f389eff3"
           ],
-          "x": 1221,
-          "y": 94.5,
+          "x": 1402,
+          "y": 281.5,
           "direction": "left"
         },
         "constraintName": "fk_project_to_operation",
@@ -3200,7 +3200,7 @@
             "a80fd0cc-e8e7-499f-a4a7-d1d8fadc1b3c"
           ],
           "x": 708.6534078683035,
-          "y": 657.3332,
+          "y": 636.8332,
           "direction": "bottom"
         },
         "constraintName": "fk_user_to_project",
@@ -3210,7 +3210,7 @@
       {
         "identification": false,
         "relationshipType": "ZeroOne",
-        "startRelationshipType": "Dash",
+        "startRelationshipType": "Ring",
         "start": {
           "tableId": "3dc9f625-67f5-4ae9-9c7e-a653c25a4924",
           "columnIds": [
@@ -3226,7 +3226,7 @@
             "96448777-8093-45fa-bd83-e8202b6a6f14"
           ],
           "x": 782.2002131138391,
-          "y": 657.3332,
+          "y": 636.8332,
           "direction": "bottom"
         },
         "constraintName": "fk_user_to_project",
@@ -3243,7 +3243,7 @@
             "f7c0007c-3ecf-44f0-8eaa-2514ba811863"
           ],
           "x": 1076.387434095982,
-          "y": 657.3332,
+          "y": 636.8332,
           "direction": "bottom"
         },
         "end": {
@@ -3251,8 +3251,8 @@
           "columnIds": [
             "90124a95-981f-433a-bb4b-1821dfe62ade"
           ],
-          "x": 1332,
-          "y": 846.75,
+          "x": 1353,
+          "y": 890,
           "direction": "left"
         },
         "constraintName": "fk_project_to_others_cost",
@@ -3277,8 +3277,8 @@
           "columnIds": [
             "d85441c9-3d36-4160-93a9-29b42e19cb07"
           ],
-          "x": 1544.5771484375,
-          "y": 932.5,
+          "x": 1565.5771484375,
+          "y": 986,
           "direction": "bottom"
         },
         "constraintName": "fk_cost_kind_to_cost",
@@ -3288,7 +3288,7 @@
       {
         "identification": false,
         "relationshipType": "ZeroOne",
-        "startRelationshipType": "Dash",
+        "startRelationshipType": "Ring",
         "start": {
           "tableId": "3dc9f625-67f5-4ae9-9c7e-a653c25a4924",
           "columnIds": [
@@ -3304,7 +3304,7 @@
             "cfd58166-b7d3-434e-a6eb-ee65d915850c"
           ],
           "x": 855.7470183593748,
-          "y": 657.3332,
+          "y": 636.8332,
           "direction": "bottom"
         },
         "constraintName": "fk_user_to_project",
@@ -3314,7 +3314,7 @@
       {
         "identification": false,
         "relationshipType": "ZeroOne",
-        "startRelationshipType": "Dash",
+        "startRelationshipType": "Ring",
         "start": {
           "tableId": "3dc9f625-67f5-4ae9-9c7e-a653c25a4924",
           "columnIds": [
@@ -3330,7 +3330,7 @@
             "06550d88-e978-4de0-9e27-836d478c1280"
           ],
           "x": 929.2938236049105,
-          "y": 657.3332,
+          "y": 636.8332,
           "direction": "bottom"
         },
         "constraintName": "fk_user_to_project",
@@ -3340,7 +3340,7 @@
       {
         "identification": false,
         "relationshipType": "ZeroOne",
-        "startRelationshipType": "Dash",
+        "startRelationshipType": "Ring",
         "start": {
           "tableId": "3dc9f625-67f5-4ae9-9c7e-a653c25a4924",
           "columnIds": [
@@ -3356,7 +3356,7 @@
             "e0a88f80-bcd8-4636-82fb-45dd4b26afbc"
           ],
           "x": 1002.8406288504461,
-          "y": 657.3332,
+          "y": 636.8332,
           "direction": "bottom"
         },
         "constraintName": "fk_user_to_project",
