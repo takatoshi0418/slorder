@@ -171,14 +171,6 @@
                         <mxPoint x="-30" as="offset"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="B8oQSfV5o2M3fqsK3nju-36" value="すべて" style="html=1;shadow=0;dashed=0;shape=mxgraph.bootstrap.rrect;rSize=5;strokeColor=#006EAF;strokeWidth=1;fillColor=#1ba1e2;fontColor=#ffffff;whiteSpace=wrap;align=center;verticalAlign=middle;fontStyle=0;fontSize=14;spacingRight=20;" parent="B8oQSfV5o2M3fqsK3nju-1" vertex="1">
-                    <mxGeometry x="-4490" y="-3286" width="90" height="40" as="geometry"/>
-                </mxCell>
-                <mxCell id="B8oQSfV5o2M3fqsK3nju-37" value="" style="shape=triangle;direction=south;fillColor=#ffffff;strokeColor=none;perimeter=none;" parent="B8oQSfV5o2M3fqsK3nju-36" vertex="1">
-                    <mxGeometry x="1" y="0.5" width="10" height="5" relative="1" as="geometry">
-                        <mxPoint x="-17" y="-2.5" as="offset"/>
-                    </mxGeometry>
-                </mxCell>
                 <mxCell id="xJLTaULHeVX9sGqjo_jQ-350" value="" style="shape=table;startSize=0;container=1;collapsible=0;childLayout=tableLayout;labelBackgroundColor=none;strokeColor=#666666;fillColor=none;fontColor=#333333;" parent="B8oQSfV5o2M3fqsK3nju-1" vertex="1">
                     <mxGeometry x="-4490" y="-3155" width="660" height="280" as="geometry"/>
                 </mxCell>
@@ -346,11 +338,50 @@
                 <mxCell id="auQeQ2b6-ETulcFZFoqt-2" value="新規受注" style="html=1;shadow=0;dashed=0;shape=mxgraph.bootstrap.rrect;rSize=5;strokeColor=#006EAF;strokeWidth=1;fillColor=#1ba1e2;fontColor=#ffffff;whiteSpace=wrap;align=center;verticalAlign=middle;spacingLeft=0;fontStyle=0;fontSize=16;spacing=5;" parent="B8oQSfV5o2M3fqsK3nju-1" vertex="1">
                     <mxGeometry x="-3920" y="-3220" width="90" height="40" as="geometry"/>
                 </mxCell>
+                <mxCell id="0WNrfWbcmKGTCO_K3hFA-0" value="受注番号または案件名" style="html=1;shadow=0;dashed=0;shape=mxgraph.bootstrap.rrect;rSize=5;fillColor=none;strokeColor=#999999;align=left;spacing=15;fontSize=14;fontColor=#6C767D;labelBackgroundColor=none;" vertex="1" parent="B8oQSfV5o2M3fqsK3nju-1">
+                    <mxGeometry x="-4459" y="-3290" width="201" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="Y8Lcy2oe2gYngw6717fF-0" value="🔎" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;fontSize=15;fontColor=#007FFF;" vertex="1" parent="B8oQSfV5o2M3fqsK3nju-1">
+                    <mxGeometry x="-4490" y="-3290" width="30" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="Y8Lcy2oe2gYngw6717fF-1" value="検索" style="html=1;shadow=0;dashed=0;shape=mxgraph.bootstrap.rrect;rSize=5;strokeColor=#006EAF;strokeWidth=1;fillColor=#1ba1e2;fontColor=#ffffff;whiteSpace=wrap;align=center;verticalAlign=middle;spacingLeft=0;fontStyle=0;fontSize=16;spacing=5;" vertex="1" parent="B8oQSfV5o2M3fqsK3nju-1">
+                    <mxGeometry x="-4249" y="-3292.5" width="59" height="35" as="geometry"/>
+                </mxCell>
+                <mxCell id="Y8Lcy2oe2gYngw6717fF-7" value="" style="edgeStyle=none;html=1;fontColor=#007FFF;" edge="1" parent="B8oQSfV5o2M3fqsK3nju-1" source="Y8Lcy2oe2gYngw6717fF-3" target="Y8Lcy2oe2gYngw6717fF-5">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="Y8Lcy2oe2gYngw6717fF-3" value="すべて" style="html=1;shadow=0;dashed=0;shape=mxgraph.bootstrap.checkbox2;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;gradientColor=#DEDEDE;fillColor=#EDEDED;checked=0;spacing=5;checkedFill=#0085FC;checkedStroke=#ffffff;fontColor=#007FFF;" vertex="1" parent="B8oQSfV5o2M3fqsK3nju-1">
+                    <mxGeometry x="-4490" y="-3250" width="10" height="10" as="geometry"/>
+                </mxCell>
+                <mxCell id="Y8Lcy2oe2gYngw6717fF-4" value="見積中" style="html=1;shadow=0;dashed=0;shape=mxgraph.bootstrap.checkbox2;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;gradientColor=#DEDEDE;fillColor=#EDEDED;checked=0;spacing=5;checkedFill=#0085FC;checkedStroke=#ffffff;fontColor=#007FFF;" vertex="1" parent="B8oQSfV5o2M3fqsK3nju-1">
+                    <mxGeometry x="-4430" y="-3250" width="10" height="10" as="geometry"/>
+                </mxCell>
+                <mxCell id="Y8Lcy2oe2gYngw6717fF-6" value="" style="edgeStyle=none;html=1;" edge="1" parent="B8oQSfV5o2M3fqsK3nju-1" source="Y8Lcy2oe2gYngw6717fF-5" target="0WNrfWbcmKGTCO_K3hFA-0">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="Y8Lcy2oe2gYngw6717fF-5" value="受注済" style="html=1;shadow=0;dashed=0;shape=mxgraph.bootstrap.checkbox2;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;gradientColor=#DEDEDE;fillColor=#EDEDED;checked=0;strokeColor=#D0D0D0;spacing=5;fontColor=#007FFF;checkedFill=#0085FC;checkedStroke=#ffffff;" vertex="1" parent="B8oQSfV5o2M3fqsK3nju-1">
+                    <mxGeometry x="-4370" y="-3250" width="10" height="10" as="geometry"/>
+                </mxCell>
+                <mxCell id="Y8Lcy2oe2gYngw6717fF-8" value="納品済" style="html=1;shadow=0;dashed=0;shape=mxgraph.bootstrap.checkbox2;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;gradientColor=#DEDEDE;fillColor=#EDEDED;checked=0;strokeColor=#D0D0D0;spacing=5;fontColor=#007FFF;checkedFill=#0085FC;checkedStroke=#ffffff;" vertex="1" parent="B8oQSfV5o2M3fqsK3nju-1">
+                    <mxGeometry x="-4310" y="-3250" width="10" height="10" as="geometry"/>
+                </mxCell>
+                <mxCell id="Y8Lcy2oe2gYngw6717fF-10" value="" style="edgeStyle=none;html=1;fontColor=#007FFF;" edge="1" parent="B8oQSfV5o2M3fqsK3nju-1" source="Y8Lcy2oe2gYngw6717fF-9" target="Y8Lcy2oe2gYngw6717fF-1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="Y8Lcy2oe2gYngw6717fF-9" value="検収確認済" style="html=1;shadow=0;dashed=0;shape=mxgraph.bootstrap.checkbox2;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;gradientColor=#DEDEDE;fillColor=#EDEDED;checked=0;strokeColor=#D0D0D0;spacing=5;fontColor=#007FFF;checkedFill=#0085FC;checkedStroke=#ffffff;" vertex="1" parent="B8oQSfV5o2M3fqsK3nju-1">
+                    <mxGeometry x="-4250" y="-3250" width="10" height="10" as="geometry"/>
+                </mxCell>
+                <mxCell id="Y8Lcy2oe2gYngw6717fF-11" value="入金確認済" style="html=1;shadow=0;dashed=0;shape=mxgraph.bootstrap.checkbox2;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;gradientColor=#DEDEDE;fillColor=#EDEDED;checked=0;strokeColor=#D0D0D0;spacing=5;fontColor=#007FFF;checkedFill=#0085FC;checkedStroke=#ffffff;" vertex="1" parent="B8oQSfV5o2M3fqsK3nju-1">
+                    <mxGeometry x="-4170" y="-3250" width="10" height="10" as="geometry"/>
+                </mxCell>
+                <mxCell id="Y8Lcy2oe2gYngw6717fF-12" value="失注" style="html=1;shadow=0;dashed=0;shape=mxgraph.bootstrap.checkbox2;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;gradientColor=#DEDEDE;fillColor=#EDEDED;checked=0;strokeColor=#D0D0D0;spacing=5;fontColor=#007FFF;checkedFill=#0085FC;checkedStroke=#ffffff;" vertex="1" parent="B8oQSfV5o2M3fqsK3nju-1">
+                    <mxGeometry x="-4090" y="-3250" width="10" height="10" as="geometry"/>
+                </mxCell>
             </root>
         </mxGraphModel>
     </diagram>
     <diagram name="受注詳細" id="0iJChTBWcLuzNqLe2TBU">
-        <mxGraphModel dx="6322" dy="4309" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="5964" dy="4337" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="XSaM805Y8c4jGWKdYpkx-0"/>
                 <mxCell id="XSaM805Y8c4jGWKdYpkx-1" parent="XSaM805Y8c4jGWKdYpkx-0"/>
@@ -829,7 +860,7 @@
         </mxGraphModel>
     </diagram>
     <diagram name="受注編集・新規作成" id="LZIT_iZuLqien1IY7LVn">
-        <mxGraphModel dx="6322" dy="4309" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="5964" dy="4337" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="zodxWE9MbzsK9mgnAH9U-0"/>
                 <mxCell id="zodxWE9MbzsK9mgnAH9U-1" parent="zodxWE9MbzsK9mgnAH9U-0"/>
