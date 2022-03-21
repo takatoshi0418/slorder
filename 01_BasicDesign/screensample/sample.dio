@@ -339,13 +339,10 @@
                     <mxGeometry x="-3920" y="-3220" width="90" height="40" as="geometry"/>
                 </mxCell>
                 <mxCell id="0WNrfWbcmKGTCO_K3hFA-0" value="受注番号または案件名" style="html=1;shadow=0;dashed=0;shape=mxgraph.bootstrap.rrect;rSize=5;fillColor=none;strokeColor=#999999;align=left;spacing=15;fontSize=14;fontColor=#6C767D;labelBackgroundColor=none;" vertex="1" parent="B8oQSfV5o2M3fqsK3nju-1">
-                    <mxGeometry x="-4459" y="-3290" width="201" height="30" as="geometry"/>
-                </mxCell>
-                <mxCell id="Y8Lcy2oe2gYngw6717fF-0" value="🔎" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;fontSize=15;fontColor=#007FFF;" vertex="1" parent="B8oQSfV5o2M3fqsK3nju-1">
-                    <mxGeometry x="-4490" y="-3290" width="30" height="30" as="geometry"/>
+                    <mxGeometry x="-4491" y="-3290" width="201" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="Y8Lcy2oe2gYngw6717fF-1" value="検索" style="html=1;shadow=0;dashed=0;shape=mxgraph.bootstrap.rrect;rSize=5;strokeColor=#006EAF;strokeWidth=1;fillColor=#1ba1e2;fontColor=#ffffff;whiteSpace=wrap;align=center;verticalAlign=middle;spacingLeft=0;fontStyle=0;fontSize=16;spacing=5;" vertex="1" parent="B8oQSfV5o2M3fqsK3nju-1">
-                    <mxGeometry x="-4249" y="-3292.5" width="59" height="35" as="geometry"/>
+                    <mxGeometry x="-4281" y="-3292.5" width="59" height="35" as="geometry"/>
                 </mxCell>
                 <mxCell id="Y8Lcy2oe2gYngw6717fF-7" value="" style="edgeStyle=none;html=1;fontColor=#007FFF;" edge="1" parent="B8oQSfV5o2M3fqsK3nju-1" source="Y8Lcy2oe2gYngw6717fF-3" target="Y8Lcy2oe2gYngw6717fF-5">
                     <mxGeometry relative="1" as="geometry"/>
