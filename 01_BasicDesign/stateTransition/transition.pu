@@ -1,0 +1,33 @@
+@startuml stateTransition
+
+title "受注の状態遷移図"
+
+state "見積中" as estimate
+state "受注済" as received
+state "納品済" as delivered
+state "検収確認済" as acceptanced
+state "入金確認済" as paymented
+state "失注" as lost_order
+
+' 通常ルート
+[*] --> estimate: 新規受注
+estimate --> received: 受注
+received --> delivered: 納品
+delivered --> acceptanced: 検収確認
+acceptanced --> paymented: 入金確認
+paymented --> [*]
+
+' 失注ルート
+estimate  --> lost_order: 失注
+received --> lost_order: 失注
+lost_order --> [*]
+
+' 取消ルート
+received --> estimate: 受注取消
+delivered --> received: 納品取消
+acceptanced --> delivered: 検収確認取消
+paymented --> acceptanced: 入金確認取消
+lost_order --> received: 失注取消
+lost_order --> estimate: 失注取消
+
+@enduml
