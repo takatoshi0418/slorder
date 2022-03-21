@@ -1,0 +1,24 @@
+@startuml screenTransition
+
+title "画面遷移図"
+
+agent "ログイン" as login
+agent "ダッシュボード" as home
+agent "受注一覧" as project_list
+agent "受注詳細" as project_detail
+agent "受注編集・新規作成" as project_edit
+agent "稼働登録" as operation_register
+
+login --> home: ログイン
+home --> project_list: 受注
+project_list --> project_detail: __受注番号__
+project_list --> project_edit: 新規受注
+project_detail --> project_list: 戻る
+project_detail --> project_edit: 編集
+project_detail --> project_detail: 受注\n納品\n検収確認\n入金確認\n失注\n受注取消\n納品取消\n検収確認取消\n入金確認取消\n失注取消
+project_detail --> operation_register: 稼働登録
+project_edit -->  project_list: キャンセル
+project_edit --> project_detail: キャンセル
+operation_register --> project_detail: 確定\nキャンセル
+
+@enduml
