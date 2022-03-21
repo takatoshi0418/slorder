@@ -141,7 +141,7 @@
 
 ## 3.画面遷移図
 
-![screenTransition](./../screenTransition/screenTransition.png)
+![screenTransition](./images/screenTransition.png)
 
 ## 4.機能一覧
 
