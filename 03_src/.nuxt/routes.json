@@ -1,0 +1,14 @@
+[
+  {
+    "name": "inspire",
+    "path": "/inspire",
+    "component": "F:\\\\AWS\\\\git\\\\slorder\\\\03_src\\\\pages\\\\inspire.vue",
+    "chunkName": "pages/inspire"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "F:\\\\AWS\\\\git\\\\slorder\\\\03_src\\\\pages\\\\index.vue",
+    "chunkName": "pages/index"
+  }
+]
