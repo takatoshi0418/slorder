@@ -6,7 +6,6 @@
     <h1 v-else>
       {{ otherError }}
     </h1>
-    <NuxtLink to="/"> Home page </NuxtLink>
   </v-app>
 </template>
 
@@ -37,6 +36,8 @@ export default {
 </script>
 
 <style scoped>
+@import '@/assets/common.css';
+
 h1 {
   font-size: 20px;
 }
