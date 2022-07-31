@@ -1,7 +1,24 @@
 {
   "common": {
+    "system_name": "SLOrder",
     "username": "ユーザー名",
     "password": "パスワード",
-    "login": "ログイン"
+    "login": "ログイン",
+    "logout": "ログアウト",
+    "status": "状況"
+  },
+  "menu": {
+    "home": "ホーム",
+    "project": "受注",
+    "client": "顧客",
+    "menber": "メンバー",
+    "payment_report": "収支報告"
+  },
+  "project": {
+    "no": "受注番号",
+    "name": "案件名"
+  },
+  "client": {
+    "name": "顧客名"
   }
 }

@@ -18,7 +18,7 @@
             @click:append="show = !show"
             autocomplete="on" />
         </ValidationProvider>
-        <v-btn type="submit" :disabled="invalid" class="px-12">{{$t('login')}}</v-btn>
+        <v-btn type="submit" :disabled="invalid" class="px-12">{{$t('common.login')}}</v-btn>
       </form>
     </ValidationObserver>
   </v-container>
@@ -26,7 +26,7 @@
 <script>
   export default {
     name: 'LoginView',
-    data() {
+    data: function() {
       return {
         username: '',
         password: '',
