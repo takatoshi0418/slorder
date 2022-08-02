@@ -32,7 +32,7 @@
           </v-list-item-title>
         </v-list-item>
       </v-list-item-group>
-      <v-list-group>
+      <v-list-group class="hidden-md-and-up">
           <template v-slot:activator>
             <v-list-item-title class="secondary--text">受注太郎</v-list-item-title>
           </template>

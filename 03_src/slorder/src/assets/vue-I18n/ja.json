@@ -16,9 +16,20 @@
   },
   "project": {
     "no": "受注番号",
-    "name": "案件名"
+    "name": "案件名",
+    "project_serch": "受注番号または案件名",
+    "create_project": "新規受注"
   },
   "client": {
     "name": "顧客名"
+  },
+  "status": {
+    "all": "すべて",
+    "estimation": "見積中",
+    "received": "受注済",
+    "delivery": "納品済",
+    "acceptanced": "検収確認済",
+    "payment": "入金済",
+    "lost_order": "失注"
   }
 }
