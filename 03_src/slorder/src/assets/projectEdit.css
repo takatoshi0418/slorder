@@ -1,0 +1,32 @@
+.header, .side_header, .header-center {
+  border-collapse: collapse;
+  border: 1px solid #757575;
+  background-color: var(--v-primary-base);
+  color: var(--v-secondary-base);
+}
+.header {
+  text-align: center;
+}
+.header-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.column, .column-right, .column-left, .column-center, .column-flex-center {
+  border-collapse: collapse;
+  border: 1px solid #757575;
+}
+.column-right {
+  text-align: right;
+}
+.column-left {
+  text-align: right;
+}
+.column-center {
+  text-align: center;
+}
+.column-flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

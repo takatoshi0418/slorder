@@ -10,11 +10,15 @@ export default new Vuetify({
       light: {
         secondary: colors.grey.lighten5,
         greyout: colors.grey.darken1,
-        accent: colors.grey.darken1 
+        accent: colors.grey.darken1,
+        cancel: colors.red.darken1
       },
       dark: {
         primary: colors.grey.darken1
       }
+    },
+    options: {
+      customProperties: true
     }
   }
 });

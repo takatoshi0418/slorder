@@ -1,11 +1,53 @@
 {
   "common": {
+    "acceptance": "検収確認",
+    "acceptance_cancel": "検収確認取消",
+    "actual_data": "実績値",
+    "assign_menber": "割当メンバー",
+    "basic_info": "基本情報",
+    "buy_date": "購入日",
+    "client_name": "顧客名",
+    "currency": "円",
+    "product_name": "商品名",
+    "delivery": "納品",
+    "delivery_cancel": "納品取消",
+    "estimate_data": "予測値",
+    "edit": "編集",
     "system_name": "SLOrder",
     "username": "ユーザー名",
     "password": "パスワード",
     "login": "ログイン",
     "logout": "ログアウト",
-    "status": "状況"
+    "lost_order": "失注",
+    "lost_order_cancel": "失注取消",
+    "member_name": "メンバー名",
+    "new_create": "新規作成",
+    "status": "状況",
+    "peyment": "収支",
+    "peymented": "入金確認",
+    "peymented_cancel": "入金確認取消",
+    "price": "金額",
+    "proceeds": "収益",
+    "project_no": "受注番号",
+    "project_name": "案件名",
+    "project_serch": "受注番号または案件名",
+    "project_new_receive": "新規受注",
+    "project_start_date": "作業開始日",
+    "project_limit_date": "納期",
+    "project_receive_amount": "受注金額",
+    "oparating_work_by_time": "稼働工数",
+    "oparating_cost": "稼働原価",
+    "oparating_register": "稼働登録",
+    "oparating_time": "稼働時間",
+    "other_cost": "その他原価",
+    "receive": "受注",
+    "receive_cancel": "受注取消",
+    "unit_cost": "単価",
+    "kind": "種別",
+    "update_history": "更新履歴",
+    "update_user": "更新者",
+    "update_date": "更新日",
+    "working_man_hours_unit": "人月"
   },
   "menu": {
     "home": "ホーム",
@@ -14,22 +56,13 @@
     "menber": "メンバー",
     "payment_report": "収支報告"
   },
-  "project": {
-    "no": "受注番号",
-    "name": "案件名",
-    "project_serch": "受注番号または案件名",
-    "create_project": "新規受注"
-  },
-  "client": {
-    "name": "顧客名"
-  },
-  "status": {
+  "project_status": {
     "all": "すべて",
     "estimation": "見積中",
     "received": "受注済",
-    "delivery": "納品済",
+    "delivered": "納品済",
     "acceptanced": "検収確認済",
-    "payment": "入金済",
+    "paymented": "入金確認済",
     "lost_order": "失注"
   }
 }

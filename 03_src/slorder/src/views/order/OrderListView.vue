@@ -15,7 +15,7 @@
           <v-row>
             <v-text-field
               v-model="filterValue"
-              :label="$t('project.project_serch')" />
+              :label="$t('common.project_serch')" />
             <v-spacer />
           </v-row>
           <v-row>
@@ -40,13 +40,17 @@
           </v-row>
           <v-row>
             <v-spacer />
-            <v-btn class="primary secondary--text">{{$t('project.create_project')}}</v-btn>
+            <v-btn 
+              class="primary secondary--text"
+              @click="doEdit">
+              {{$t('common.project_new_receive')}}
+            </v-btn>
           </v-row>
         </v-container>
       </template>
       <template v-if="isEnabled()" v-slot:item="{item}">
         <tr>
-          <td :class="item.isEnabled? '' : 'greyout secondary--text'">{{item.project_no}}</td>
+          <td :class="item.isEnabled? '' : 'greyout secondary--text'" @click="doEdit(item.project_no)">{{item.project_no}}</td>
           <td :class="item.isEnabled? '' : 'greyout secondary--text'">{{item.project_name}}</td>
           <td :class="item.isEnabled? '' : 'greyout secondary--text'">{{item.client_name}}</td>
           <td :class="item.isEnabled? 'text-center' : 'greyout secondary--text text-center'">{{item.status}}</td>
@@ -67,36 +71,29 @@
         pageCount: 0,
         filterValue: '',
         projectList: projectList,
-        selectAllStatus: {label: this.$t('status.all'), id: 0, checked: false},
-        selectOtherStatus: [
-          {label: this.$t('status.estimation'), id: 1, checked: true},
-          {label: this.$t('status.received'), id: 2, checked: true},
-          {label: this.$t('status.delivery'), id: 3, checked: true},
-          {label: this.$t('status.acceptanced'), id: 4, checked: true},
-          {label: this.$t('status.payment'), id: 5, checked: false},
-          {label: this.$t('status.lost_order'), id: 6, checked: false}
-        ]
+        selectAllStatus: {label: this.$t('project_status.all'), id: 0, checked: false},
+        selectOtherStatus: this.$projectStatus
       }
     },
     computed: {
       headers: function() {
         return [
           {
-            text: this.$t('project.no'),
+            text: this.$t('common.project_no'),
             align: 'center',
             value: 'project_no',
             sortable: false,
             class: 'primary secondary--text'
           },
           {
-            text: this.$t('project.name'),
+            text: this.$t('common.project_name'),
             align: 'center',
             value: 'project_name',
             sortable: false,
             class: 'primary secondary--text'
           },
           {
-            text: this.$t('client.name'),
+            text: this.$t('common.client_name'),
             align: 'center',
             value: 'client_name',
             sortable: false,
@@ -151,11 +148,15 @@
         }
         return;
       },
-      isEnabled() {
+      isEnabled: function() {
         if (this.projectList === [] || this.projectList === undefined) {
           return false;  
         }
         return true;
+      },
+      doEdit: function(project_no) {
+        project_no
+        this.$router.replace({name: 'orderEdit'})
       }
     }
   }

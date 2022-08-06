@@ -17,10 +17,8 @@
       </v-btn>
     </template>
     <v-list>
-      <v-list-item>
-        <v-list-item-title>
-          <v-btn text>{{$t('common.logout')}}</v-btn>
-        </v-list-item-title>
+      <v-list-item @click="logout()">
+        <v-list-item-title>{{$t('common.logout')}}</v-list-item-title>
       </v-list-item>
     </v-list>
   </v-menu>
@@ -32,7 +30,11 @@
       return {
         username: '受注太郎'
       }
-      
+    },
+    methods: {
+      logout: function() {
+        this.$router.replace({name: 'login'})
+      }
     }
   }
 </script>
