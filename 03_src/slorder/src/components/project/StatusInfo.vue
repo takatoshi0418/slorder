@@ -1,39 +1,37 @@
 <template>
-  <v-container 
-    v-if="!editable"
-    class="primary--text mb-8">
+  <v-container class="primary--text mb-8">
     <v-row>
-      <v-col cols="1" class="header-center">{{$t('common.status')}}</v-col>
+      <v-col cols="1" class="header">{{$t('common.status')}}</v-col>
       <v-col cols="1" class="column-flex-center">{{status}}</v-col>
       <v-col cols="10">
-        <span v-if="isVisibleReceive">
+        <span v-if="ReceiveVisible">
           <v-btn @click="doReceive" class="primary secondary--text mx-2">{{$t('common.receive')}}</v-btn>
         </span>
-        <span v-if="isVisibleDelivery">
+        <span v-if="DeliveryVisible">
           <v-btn @click="doDelivery" class="primary secondary--text mx-2">{{$t('common.delivery')}}</v-btn>
         </span>
-        <span v-if="isVisibleAcceptance">
+        <span v-if="AcceptanceVisible">
           <v-btn @click="doAcceptance" class="primary secondary--text mx-2">{{$t('common.acceptance')}}</v-btn>
         </span>
-        <span v-if="isVisiblePeymented">
+        <span v-if="PeymentedVisible">
           <v-btn @click="doPeymented" class="primary secondary--text mx-2">{{$t('common.peymented')}}</v-btn>
         </span>
-        <span v-if="isVisibleLostOrder">
+        <span v-if="LostOrderVisible">
           <v-btn @click="doLostOrder" class="cancel secondary--text mx-2">{{$t('common.lost_order')}}</v-btn>
         </span>
-        <span v-if="isVisibleReceiveCancel">
+        <span v-if="ReceiveCancelVisible">
           <v-btn @click="doReceiveCancel" class="cancel secondary--text mx-2">{{$t('common.receive_cancel')}}</v-btn>
         </span>
-        <span v-if="isVisibleDeliveryCancel">
+        <span v-if="DeliveryCancelVisible">
           <v-btn @click="doDeliveryCancel" class="cancel secondary--text mx-2">{{$t('common.delivery_cancel')}}</v-btn>
         </span>
-        <span v-if="isVisibleAcceptanceCancel">
+        <span v-if="AcceptanceCancelVisible">
           <v-btn @click="doAcceptanceCancel" class="cancel secondary--text mx-2">{{$t('common.acceptance_cancel')}}</v-btn>
         </span>
-        <span v-if="isVisiblePeymentedCancel">
+        <span v-if="PeymentedCancelVisible">
           <v-btn @click="doPeymentedCancel" class="cancel secondary--text mx-2">{{$t('common.peymented_cancel')}}</v-btn>
         </span>
-        <span v-if="isVisibleLostOrderCancel">
+        <span v-if="LostOrderCancelVisible">
           <v-btn @click="doLostOrderCancel" class="cancel secondary--text mx-2">{{$t('common.lost_order_cancel')}}</v-btn>
         </span>
       </v-col>
@@ -86,10 +84,6 @@
       doLostOrderCancel: {
         type: Function,
         required: true
-      },
-      editable: {
-        type: Boolean,
-        default: false
       }
     },
     computed: {
@@ -101,35 +95,35 @@
         }
         return '';
       },
-      isVisibleReceive: function() {
+      ReceiveVisible: function() {
         return this.$getProjectStatus('estimation').id === this.value
       },
-      isVisibleDelivery: function() {
+      DeliveryVisible: function() {
         return this.$getProjectStatus('received').id === this.value
       },
-      isVisibleAcceptance: function() {
+      AcceptanceVisible: function() {
         return this.$getProjectStatus('delivered').id === this.value
       },
-      isVisiblePeymented: function() {
+      PeymentedVisible: function() {
         return this.$getProjectStatus('acceptanced').id === this.value
       },
-      isVisibleLostOrder: function() {
+      LostOrderVisible: function() {
         return this.$getProjectStatus('estimation').id === this.value
           || this.$getProjectStatus('received').id === this.value
       },
-      isVisibleReceiveCancel: function() {
+      ReceiveCancelVisible: function() {
         return this.$getProjectStatus('received').id === this.value
       },
-      isVisibleDeliveryCancel: function() {
+      DeliveryCancelVisible: function() {
         return this.$getProjectStatus('delivered').id === this.value
       },
-      isVisibleAcceptanceCancel: function() {
+      AcceptanceCancelVisible: function() {
         return this.$getProjectStatus('acceptanced').id === this.value
       },
-      isVisiblePeymentedCancel: function() {
+      PeymentedCancelVisible: function() {
         return this.$getProjectStatus('paymented').id === this.value
       },
-      isVisibleLostOrderCancel: function() {
+      LostOrderCancelVisible: function() {
         return this.$getProjectStatus('lostOrder').id === this.value
       }
     }

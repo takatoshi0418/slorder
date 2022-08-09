@@ -68,7 +68,7 @@ export default {
       }
     },
     suffix: function() {
-      return this.notSpace? '': ' ' + this.unit;
+      return (this.notSpace? '': ' ') + this.unit;
     },
     displayString: function() {
       let number = Number.parseFloat(this.value);

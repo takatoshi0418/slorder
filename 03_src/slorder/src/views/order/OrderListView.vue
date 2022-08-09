@@ -216,7 +216,7 @@
       project_no : 'P-20220301-0005',
       project_name: '顧客管理システム',
       client_name: 'スズキ薬局', 
-      status: '入金済',
+      status: '入金確認済',
       isEnabled: false
     },
     {

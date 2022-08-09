@@ -185,8 +185,8 @@
             "id": "5ceece3e-79eb-4b96-afb3-ade9555afa66"
           },
           {
-            "name": "buildin_flag",
-            "comment": "ビルドイン",
+            "name": "builtin_flag",
+            "comment": "ビルトイン",
             "dataType": "BOOLEAN",
             "default": "",
             "option": {
@@ -200,7 +200,7 @@
               "pk": false,
               "fk": false,
               "pfk": false,
-              "widthName": 75.0234375,
+              "widthName": 72.0400390625,
               "widthComment": 67,
               "widthDataType": 64.27685546875,
               "widthDefault": 60
@@ -211,8 +211,8 @@
         "ui": {
           "active": false,
           "left": 516.6985,
-          "top": 1154.5712,
-          "zIndex": 5,
+          "top": 1155.5712,
+          "zIndex": 96,
           "widthName": 60,
           "widthComment": 60
         },
@@ -757,7 +757,7 @@
           "active": false,
           "left": 598.3332,
           "top": 96.3332,
-          "zIndex": 15,
+          "zIndex": 13,
           "widthName": 60,
           "widthComment": 60
         },
@@ -798,21 +798,21 @@
             "default": "",
             "option": {
               "autoIncrement": false,
-              "primaryKey": true,
+              "primaryKey": false,
               "unique": false,
               "notNull": true
             },
             "ui": {
               "active": false,
-              "pk": true,
-              "fk": false,
+              "pk": false,
+              "fk": true,
               "pfk": false,
               "widthName": 74.515625,
               "widthComment": 68.97412109375,
               "widthDataType": 91.8447265625,
               "widthDefault": 60
             },
-            "id": "94681e59-5382-4d56-b645-d7fadc2b1cb2"
+            "id": "8fdcd653-a899-4edd-baec-34ad58ad084a"
           },
           {
             "name": "assign_date",
@@ -886,9 +886,9 @@
         ],
         "ui": {
           "active": false,
-          "left": 1228.7773,
-          "top": 16.0005,
-          "zIndex": 24,
+          "left": 1296.7773,
+          "top": 17.0005,
+          "zIndex": 44,
           "widthName": 107.59326171875,
           "widthComment": 80
         },
@@ -1493,9 +1493,9 @@
         ],
         "ui": {
           "active": false,
-          "left": 1384.4019,
-          "top": 378.2228,
-          "zIndex": 23,
+          "left": 1529.4019,
+          "top": 359.2228,
+          "zIndex": 40,
           "widthName": 60,
           "widthComment": 60
         },
@@ -1566,18 +1566,18 @@
             "ui": {
               "active": false,
               "pk": false,
-              "fk": false,
+              "fk": true,
               "pfk": false,
               "widthName": 60,
               "widthComment": 60,
               "widthDataType": 91.8447265625,
               "widthDefault": 60
             },
-            "id": "6d9d99f0-32f9-4c57-8b0d-d4b0d34c5dfc"
+            "id": "72f7eff0-e086-4ece-bd58-9e93ea68b393"
           },
           {
-            "name": "buildin_flag",
-            "comment": "ビルドイン",
+            "name": "builtin_flag",
+            "comment": "ビルトイン",
             "dataType": "BOOLEAN",
             "default": "",
             "option": {
@@ -1591,42 +1591,19 @@
               "pk": false,
               "fk": false,
               "pfk": false,
-              "widthName": 75.0234375,
+              "widthName": 72.0400390625,
               "widthComment": 67,
               "widthDataType": 64.27685546875,
               "widthDefault": 60
             },
             "id": "8217cea3-327f-4aef-bcfd-d6f4e5b70ee5"
-          },
-          {
-            "name": "roll_id",
-            "comment": "ロールID",
-            "dataType": "VARCHAR(16)",
-            "default": "",
-            "option": {
-              "autoIncrement": false,
-              "primaryKey": false,
-              "unique": false,
-              "notNull": true
-            },
-            "ui": {
-              "active": false,
-              "pk": false,
-              "fk": true,
-              "pfk": false,
-              "widthName": 60,
-              "widthComment": 60,
-              "widthDataType": 91.8447265625,
-              "widthDefault": 60
-            },
-            "id": "72f7eff0-e086-4ece-bd58-9e93ea68b393"
           }
         ],
         "ui": {
           "active": false,
           "left": 608.7149,
           "top": 1670.4282,
-          "zIndex": 11,
+          "zIndex": 73,
           "widthName": 60,
           "widthComment": 60
         },
@@ -2214,21 +2191,21 @@
             "default": "",
             "option": {
               "autoIncrement": false,
-              "primaryKey": true,
+              "primaryKey": false,
               "unique": false,
               "notNull": true
             },
             "ui": {
               "active": false,
-              "pk": true,
-              "fk": false,
+              "pk": false,
+              "fk": true,
               "pfk": false,
               "widthName": 74.515625,
               "widthComment": 68.97412109375,
               "widthDataType": 91.8447265625,
               "widthDefault": 60
             },
-            "id": "5fccb183-e429-470a-8a1a-a876bb5a0065"
+            "id": "779d80cc-329b-4efd-aa64-a8c81c096d40"
           },
           {
             "name": "work_date",
@@ -2279,9 +2256,9 @@
         ],
         "ui": {
           "active": false,
-          "left": 1402,
-          "top": 206,
-          "zIndex": 22,
+          "left": 1260,
+          "top": 195,
+          "zIndex": 39,
           "widthName": 60,
           "widthComment": 60
         },
@@ -2489,11 +2466,11 @@
         "id": "106be862-95d0-4efd-bdcf-e7773e795f70"
       },
       {
-        "name": "roll",
+        "name": "role",
         "comment": "ロール",
         "columns": [
           {
-            "name": "roll_id",
+            "name": "role_id",
             "comment": "ロールID",
             "dataType": "VARCHAR(16)",
             "default": "",
@@ -2539,8 +2516,8 @@
             "id": "82674d10-bc35-40b8-b839-c8d4daf2c696"
           },
           {
-            "name": "buildin_flag",
-            "comment": "ビルドイン",
+            "name": "builtin_flag",
+            "comment": "ビルトイン",
             "dataType": "BOOLEAN",
             "default": "",
             "option": {
@@ -2554,7 +2531,7 @@
               "pk": false,
               "fk": false,
               "pfk": false,
-              "widthName": 75.0234375,
+              "widthName": 72.0400390625,
               "widthComment": 67,
               "widthDataType": 64.27685546875,
               "widthDefault": 60
@@ -2566,7 +2543,7 @@
           "active": false,
           "left": 1227,
           "top": 1643,
-          "zIndex": 8,
+          "zIndex": 80,
           "widthName": 60,
           "widthComment": 60
         },
@@ -2636,11 +2613,11 @@
         "id": "d536caad-f4f9-4e19-b7a9-7afbeffea32e"
       },
       {
-        "name": "permission_roll",
+        "name": "permission_role",
         "comment": "権限ロール",
         "columns": [
           {
-            "name": "roll_id",
+            "name": "role_id",
             "comment": "ロールID",
             "dataType": "VARCHAR(16)",
             "default": "",
@@ -2690,8 +2667,8 @@
           "active": false,
           "left": 1220,
           "top": 1415,
-          "zIndex": 9,
-          "widthName": 98.32568359375,
+          "zIndex": 89,
+          "widthName": 102.52783203125,
           "widthComment": 67
         },
         "visible": true,
@@ -2844,7 +2821,7 @@
           "active": false,
           "left": 1353,
           "top": 794,
-          "zIndex": 18,
+          "zIndex": 14,
           "widthName": 60,
           "widthComment": 67
         },
@@ -2931,7 +2908,7 @@
             "f7c0007c-3ecf-44f0-8eaa-2514ba811863"
           ],
           "x": 1113.16083671875,
-          "y": 231.4582,
+          "y": 501.70820000000003,
           "direction": "right"
         },
         "end": {
@@ -2939,8 +2916,8 @@
           "columnIds": [
             "798a9d3f-ce40-4a91-8d48-b40be40b28ac"
           ],
-          "x": 1228.7773,
-          "y": 101.7505,
+          "x": 1296.7773,
+          "y": 102.7505,
           "direction": "left"
         },
         "constraintName": "fk_project_to_project_member",
@@ -3009,7 +2986,7 @@
             "0b644d24-acba-4479-9297-bc94eca0f1bc"
           ],
           "x": 733.60475,
-          "y": 1367.0712,
+          "y": 1368.0712,
           "direction": "bottom"
         },
         "end": {
@@ -3061,7 +3038,7 @@
             "0b644d24-acba-4479-9297-bc94eca0f1bc"
           ],
           "x": 516.6985,
-          "y": 1260.8212,
+          "y": 1261.8212,
           "direction": "left"
         },
         "end": {
@@ -3087,7 +3064,7 @@
             "f7c0007c-3ecf-44f0-8eaa-2514ba811863"
           ],
           "x": 1113.16083671875,
-          "y": 501.70820000000003,
+          "y": 231.4582,
           "direction": "right"
         },
         "end": {
@@ -3095,8 +3072,8 @@
           "columnIds": [
             "f791742e-e6a3-4f6d-b2c4-8530f389eff3"
           ],
-          "x": 1402,
-          "y": 281.5,
+          "x": 1260,
+          "y": 270.5,
           "direction": "left"
         },
         "constraintName": "fk_project_to_operation",
@@ -3122,7 +3099,7 @@
             "72f7eff0-e086-4ece-bd58-9e93ea68b393"
           ],
           "x": 1017.111384375,
-          "y": 1756.1782,
+          "y": 1745.9282,
           "direction": "right"
         },
         "constraintName": "fk_roll_to_group",
@@ -3138,7 +3115,7 @@
           "columnIds": [
             "926ec7f5-73b5-466b-9f85-9cd46e34fc94"
           ],
-          "x": 1427.43408203125,
+          "x": 1425.9423828125,
           "y": 1643,
           "direction": "top"
         },
@@ -3191,7 +3168,7 @@
             "0b644d24-acba-4479-9297-bc94eca0f1bc"
           ],
           "x": 560.07975,
-          "y": 1154.5712,
+          "y": 1155.5712,
           "direction": "top"
         },
         "end": {
@@ -3217,7 +3194,7 @@
             "0b644d24-acba-4479-9297-bc94eca0f1bc"
           ],
           "x": 646.84225,
-          "y": 1154.5712,
+          "y": 1155.5712,
           "direction": "top"
         },
         "end": {
@@ -3295,7 +3272,7 @@
             "0b644d24-acba-4479-9297-bc94eca0f1bc"
           ],
           "x": 733.6047500000001,
-          "y": 1154.5712,
+          "y": 1155.5712,
           "direction": "top"
         },
         "end": {
@@ -3321,7 +3298,7 @@
             "0b644d24-acba-4479-9297-bc94eca0f1bc"
           ],
           "x": 820.3672500000001,
-          "y": 1154.5712,
+          "y": 1155.5712,
           "direction": "top"
         },
         "end": {
@@ -3347,7 +3324,7 @@
             "0b644d24-acba-4479-9297-bc94eca0f1bc"
           ],
           "x": 907.1297500000002,
-          "y": 1154.5712,
+          "y": 1155.5712,
           "direction": "top"
         },
         "end": {
@@ -3362,6 +3339,58 @@
         "constraintName": "fk_user_to_project",
         "visible": true,
         "id": "2ee1da08-5cdf-41d7-a6bf-c82e3dffde8d"
+      },
+      {
+        "identification": false,
+        "relationshipType": "ZeroN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "d6a7ae3d-d64f-4867-98cc-c620ef501b6c",
+          "columnIds": [
+            "ec87673a-1281-47c1-8b19-549486a7464b"
+          ],
+          "x": 1646.0514361328126,
+          "y": 359.2228,
+          "direction": "top"
+        },
+        "end": {
+          "tableId": "cf7a2a32-5eb2-455e-8254-f16305575379",
+          "columnIds": [
+            "779d80cc-329b-4efd-aa64-a8c81c096d40"
+          ],
+          "x": 1688.33447265625,
+          "y": 270.5,
+          "direction": "right"
+        },
+        "constraintName": "fk_member_to_work",
+        "visible": true,
+        "id": "2098bc61-ebdc-4fa7-97e5-8cdf96550cff"
+      },
+      {
+        "identification": false,
+        "relationshipType": "ZeroN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "d6a7ae3d-d64f-4867-98cc-c620ef501b6c",
+          "columnIds": [
+            "ec87673a-1281-47c1-8b19-549486a7464b"
+          ],
+          "x": 1879.3505083984376,
+          "y": 359.2228,
+          "direction": "top"
+        },
+        "end": {
+          "tableId": "3eb3f72f-73d2-411c-9e00-d730053f32d0",
+          "columnIds": [
+            "8fdcd653-a899-4edd-baec-34ad58ad084a"
+          ],
+          "x": 1728.2665578125,
+          "y": 102.7505,
+          "direction": "right"
+        },
+        "constraintName": "fk_member_to_project_member",
+        "visible": true,
+        "id": "1e26d199-83de-4e55-813c-02d2c7f75338"
       }
     ]
   }

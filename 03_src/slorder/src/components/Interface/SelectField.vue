@@ -10,6 +10,7 @@
         :item-text="itemText"
         :item-value="itemValue"
         :error-messages="errors"
+        :return-object="returnObject"
         dense />
     </ValidationProvider>
   </span>
@@ -38,6 +39,10 @@ export default {
     itemValue: {
       type: String,
       required: true
+    },
+    returnObject: {
+      type: Boolean,
+      default: false
     },
     editable: {
       type: Boolean,
