@@ -30,6 +30,7 @@
     <AssignMemberInfo
       :members="project.members"
       :editable=editable
+      :do-operating-register="doOperatingRegister"
       v-on:update="arrayDataUpdate"
       v-on:add="addArray"
       v-on:delete="deleteArray" />
@@ -169,6 +170,9 @@
       },
       doCancel: function() {
         this.editable = false;
+      },
+      doOperatingRegister: function() {
+        this.$router.replace({name: 'orderOperatingRegister'});
       },
       doReceive: function() {
 

@@ -1,10 +1,10 @@
 <template>
   <span v-if="isEditable()">
     <v-menu
-      ref="datePicker"
-      v-model="datePicker"
+      ref="timePicker"
+      v-model="timePicker"
       :close-on-content-click=false
-      :return-value.sync="selectDate"
+      :return-value.sync="selectTime"
       min-width="auto"
       offset-y>
       <template v-slot:activator="{ on, attrs }">
@@ -13,8 +13,7 @@
           v-slot="{errors}" 
           :name="label">
           <v-text-field
-            :class="centeringCss"
-            v-model="dateValue"
+            v-model="timeValue"
             :error-messages="errors"
             dense
             readonly
@@ -23,11 +22,12 @@
             v-on="on" />
         </ValidationProvider>
       </template>
-      <v-date-picker
-        locale="jp-ja"
-        v-model="selectDate"
-        @input="$refs.datePicker.save(selectDate)
-        menu = false" />
+      <v-time-picker
+        v-model="selectTime"
+        @click:minute="$refs.timePicker.save(selectTime)
+        timePicker = false"
+        format="24hr"
+        scrollable />
     </v-menu>
   </span>
   <span v-else-if="isEditableElse()">
@@ -37,7 +37,7 @@
 <script>
 
 export default {
-  name: 'dateField',
+  name: 'timeField',
   props: {
     value: {
       required: true
@@ -53,18 +53,14 @@ export default {
     solo: {
       type: Boolean,
       default: false
-    },
-    centering: {
-      type: Boolean,
-      default: false
     }
   },
   data: function() {
     return {
       errors: [],
       rule: 'required',
-      datePicker: false,
-      selectDate: this.value
+      timePicker: false,
+      selectTime: this.value
     }
   },
   methods: {
@@ -76,27 +72,22 @@ export default {
     }
   },
   computed: {
-    dateValue: {
+    timeValue: {
       get () {
         return this.value;
       },
       set (value) {
         this.$emit('input', value);
       }
-    },
-    centeringCss: function() {
-      return this.centering? 'input-centering' : ''
     }
   },
   watch: {
-    selectDate: function() {
-      this.dateValue = this.selectDate;
+    selectTime: {
+      handler: function(value) {
+        this.timeValue = value;
+      },
+      deep: true
     }
   }
 }
 </script>
-<style>
-.input-centering input {
-  text-align: center;
-}
-</style>

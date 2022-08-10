@@ -4,6 +4,7 @@
       {{$t('common.assign_menber')}}
       <v-btn 
         v-if="viewMode"
+        @click="doOperatingRegister"
         class="primary secondary--text d-block ml-auto mb-2">
         {{$t('common.oparating_register')}}
       </v-btn>
@@ -58,6 +59,10 @@
       editable: {
         type: Boolean,
         default: false
+      },
+      doOperatingRegister: {
+        type: Function,
+        required: true
       }
     },
     computed: {

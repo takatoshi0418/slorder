@@ -29,7 +29,8 @@
       <DateField 
         v-model="buyDate"
         :label="$t('common.buy_date')"
-        :editable=editable />
+        :editable=editable
+        :centering=true />
     </v-col>
     <v-col class="column-right" cols="3">
       <NumberField 
