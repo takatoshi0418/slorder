@@ -7,7 +7,7 @@ RUN npm install express
 
 EXPOSE 8080
 
-COPY sloder/dist/ /var/www/
+COPY slorder/dist/ /var/www/
 COPY docker/server.js /var/www/server.js
 
 CMD node server.js
